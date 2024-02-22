@@ -1,6 +1,8 @@
 def join_array_remove_duplicate(arrayA, arrayB):
-    # your code here
-    return []
+    for x in arrayA:
+        if x in arrayB:
+            arrayB.remove(x)
+    return arrayA + arrayB
 
 if __name__ == '__main__':
     # Test cases
