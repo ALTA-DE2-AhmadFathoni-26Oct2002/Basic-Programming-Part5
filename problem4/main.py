@@ -1,13 +1,12 @@
 def muncul_sekali(angka):
     angka_list = [int(x) for x in angka]
-    myset = set()
+    pattern = []
     
-    for angka in angka_list:
-        if angka_list.count(angka) == 1:
-            myset.add(angka)
+    for x in angka_list:
+        if angka_list.count(x) == 1:
+            pattern.append(x)
             
-    return list(myset)
-        
+    return pattern
 
 if __name__ == '__main__':
     print(muncul_sekali("1234123")) # [4]
