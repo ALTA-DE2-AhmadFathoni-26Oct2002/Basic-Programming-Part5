@@ -4,7 +4,6 @@ def pair_sum(arr, target):
         for y in range (x, leng):
             if (arr[x] + arr[y]) == target:
                 return [x,y]
-            
 
 if __name__ == '__main__':
     print(pair_sum([1, 2, 3, 4, 6], 6)) # [1, 3]
